@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brocs - Clogs, Shoes and Sandals</title>
+    <!-- Remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Swiper.js styles -->
+    <!-- <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css"/> -->
+    <!-- Custom styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__toggle">
+                <i class="btn ri-menu-3-line open-menu-icon" id="nav-toggle"></i>
+                <a href="index.html" class="nav__logo">Brocs</a>
+            </div>
+            
+            
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list list">
+                
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">Featured</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#product" class="nav__link">Products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">New</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#shop" class="nav__link">Shop</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-fill nav__ close"></i>
+                </div>
+            </div>
+
+            <div class="btn nav__btn" id="nav-btn">
+                <button class="btn place-items-center" id="theme-toggle-btn">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </button>
+            
+                <button class="btn place-items-center" id="cart-btn">
+                    <i class="ri-shopping-cart-line"></i>
+                </button>
+
+                
+            </div>
+            
+        </nav>
+
+
+    </header>
+
+    <div class="cart" id="cart">
+        <i class="ri-close-fill cart__close" id="cart-close"></i>
+        <h3 class="cart__title-center">My Cart</h3>
+
+        <div class="cart__container" id="cart-container">
+            <!-- <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/images/featured.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Classic Clog</h3>
+                    <span class="cart__price">$49.99</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="ri-subtract-line cart__amount-btn"></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class="ri-add-line cart__amount-btn"></i>
+                            </span>
+                        </div>
+
+                        <i class="ri-delete-bin-4-line cart__amount-trash"></i>
+                    </div>
+                </div>  
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/images/crocs-new.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Classic Glitter Clog</h3>
+                    <span class="cart__price">$69.99</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="ri-subtract-line cart__amount-btn"></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class="ri-add-line cart__amount-btn"></i>
+                            </span>
+                        </div>
+
+                        <i class="ri-delete-bin-4-line cart__amount-trash"></i>
+                    </div>
+                </div>  
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/images/crocs3.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Rad Dad Pack</h3>
+                    <span class="cart__price">$49.99</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="ri-subtract-line cart__amount-btn"></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class="ri-add-line cart__amount-btn"></i>
+                            </span>
+                        </div>
+
+                        <i class="ri-delete-bin-4-line cart__amount-trash"></i>
+                    </div>
+                </div>  
+            </article> -->
+        </div>
+
+        <div class="cart__total">
+            <span class="cart__total-item">3 items</span>
+            <span class="cart__total-price">$200</span>
+        </div>
+    </div>
+
+
+    <main class="main">
+        <section class="home" id="home" id="featured">
+            <div class="home__container container grid">
+                 <div class="home__img-bg">
+                    <img src="assets/images/crocs.png" alt="" class="home__img">
+                 </div>
+
+                 <div class="home__data">
+                    <h1 class="home__title">
+                        New Crocs <br> Collection BEAMS
+                    </h1>
+                    <p class="home__description">
+                        Made for the mountains, styled for the streets. Take the utilitarian Japanese streetwear of Beams and combine it with Crocs comfort for the outdoors, and you have a practical, military-inspired All-Terrain Clog. Available in two distinct styles; with either a removable pouch on the back or a web pocket and zip compartment on the front.
+                    </p>
+                    <span class="home__price">$250</span>
+
+                    <div class="home__btns">
+                        <a href="#" class="button button--gray button--small">
+                            Discover
+                        </a>
+
+                        <button class="button home__button">ADD TO CART</button>
+                    </div>
+                 </div>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                    Facebook
+                </a>
+                <a href="https://www.twitter.com/" target="_blank" class="home__social-link">
+                    Twitter
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                    Instagram
+                </a>
+             </div>
+        </section>
+
+        <section class="featured section container">
+            <h2 class="section__title">
+                Featured
+            </h2>
+
+            <div class="featured__container grid" id="featured-container">
+                
+            </div>
+
+
+        </section>
+
+        <section class="story section" id="story">
+            <div class="story__container grid container">
+                <div class="story__data">
+                    <h2 class="section__title story__section-title">Our Story</h2>
+
+                    <h3 class="story__title">We Believe Everyone Should Be
+                        Comfortable In Their Own Shoes</h3>
+
+                    <p class="story__description">So, we’re committed to reducing our environmental footprint, uplifting
+                        our communities and creating a welcoming environment for everyone,
+                        rooted in a culture of governance, transparency and accountability.​</p>
+
+                    <a href="#" class="button story__button">Discover</a>
+                </div>
+
+                <div class="story__images">
+                    <img src="assets/images/download-removebg-preview.jpg" alt="" class="story__img">
+                    <div class="story__square"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product section container" id="product">
+            <h2 class="section__title">Products</h2>
+
+            <div class="product__container grid" id="product-container">
+               <!--  <article class="product__card">
+                    <img src="assets/images/product-1.png" alt="" class="product__img">
+                    <h3 class="product__title">Classic Lined Clog</h3>
+                    <span class="product__price">$49.99</span>
+                    <button class="product__button">
+                        <i class="ri-shopping-bag-line"></i>
+                    </button>
+
+                </article>
+
+                <article class="product__card">
+                    <img src="assets/images/product-2.png" alt="" class="product__img">
+                    <h3 class="product__title">Classic Lined Clog</h3>
+                    <span class="product__price">$49.99</span>
+                    <button class="product__button">
+                        <i class="ri-shopping-bag-line"></i>
+                    </button>
+
+                </article>
+            
+
+            
+                <article class="product__card">
+                    <img src="assets/images/product-3.png" alt="" class="product__img">
+                    <h3 class="product__title">Classic Lined Clog</h3>
+                    <span class="product__price">$49.99</span>
+                    <button class="product__button">
+                        <i class="ri-shopping-bag-line"></i>
+                    </button>
+
+                </article>
+            
+
+            
+                <article class="product__card">
+                    <img src="assets/images/product-4.png" alt="" class="product__img">
+                    <h3 class="product__title">Classic Lined Clog</h3>
+                    <span class="product__price">$49.99</span>
+                    <button class="product__button">
+                        <i class="ri-shopping-bag-line"></i>
+                    </button>
+
+                </article> -->
+            </div>
+        </section>
+        
+        <section class="section testimonial container">
+
+            <div class="testimonial__container grid">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class="ri-double-quotes-l"></i>
+                            </div>
+                            <p class="testimonial__description">
+                                Crocs are designed to be a practical footwear choice. They feature air holes for great cooling and draining ability, which allows them to dry quickly if they become wet outdoors.
+                            </p>
+                            <h3 class="testimonial__date">March 11, 2022</h3>
+                            <div class="testimonial__data">
+                                <img src="assets/images/cesar-rincon-XHVpWcr5grQ-unsplash.jpg" alt="" class="testimonial__data-img">
+                                <div class="testimonial__details">
+                                    <h3 class="testimonial__details-name">Chris Hemsworth</h3>
+                                    <span class="testimonial__details-job">Manager, Starbucks</span>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class="ri-double-quotes-l"></i>
+                            </div>
+                            <p class="testimonial__description">
+                                Indoor Crocs feature a warm fuzzy lining, when combined with the slight height of the sole that allows for your feet to be kept off the cold of the ground, they make an ideal choice for indoor wear in winter.
+                            </p>
+                            <h3 class="testimonial__date">Febraury 16, 2022</h3>
+                            <div class="testimonial__data">
+                                <img src="assets/images/almos-bechtold-3402kvtHhOo-unsplash.jpg" alt="" class="testimonial__data-img">
+                                <div class="testimonial__details">
+                                    <h3 class="testimonial__details-name">Anna Taylor-Joy</h3>
+                                    <span class="testimonial__details-job">Construction Worker</span>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class="ri-double-quotes-l"></i>
+                            </div>
+                            <p class="testimonial__description">
+                                Crocs are a versatile footwear choice, not only in terms of design but purpose for wear. Crocs are popular as a work shoe (with the brand even offering a workwear range).
+                            </p>
+                            <h3 class="testimonial__date">June 14, 2022</h3>
+                            <div class="testimonial__data">
+                                <img src="assets/images/angelo-abear-XDevBdyfMD8-unsplash.jpg" alt="" class="testimonial__data-img">
+                                <div class="testimonial__details">
+                                    <h3 class="testimonial__details-name">Chris Pratt</h3>
+                                    <span class="testimonial__details-job">Software Engineer</span>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class="ri-double-quotes-l"></i>
+                            </div>
+                            <p class="testimonial__description">
+                                Their design is wipeable, making them easy to clean should any fluids spill on them. They also make a great vacation or pool side shoe. Crocs are great for garden wear too, whether it’s for relaxing or gardening purposes.
+                            </p>
+                            <h3 class="testimonial__date">April 26, 2022</h3>
+                            <div class="testimonial__data">
+                                <img src="assets/images/art-hauntington-B5PLtlpR7YA-unsplash.jpg" alt="" class="testimonial__data-img">
+                                <div class="testimonial__details">
+                                    <h3 class="testimonial__details-name">Zoe Saldana</h3>
+                                    <span class="testimonial__details-job">School Teacher</span>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class="ri-double-quotes-l"></i>
+                            </div>
+                            <p class="testimonial__description">
+                                Currently they are a super fashionable choice for influencers, so you may want to just wear them as part of a statement outfit. Their versatility is remarkable.
+                            </p>
+                            <h3 class="testimonial__date">July 30, 2022</h3>
+                            <div class="testimonial__data">
+                                <img src="assets/images/ludvig-wiese-d-MfHM-jHwc-unsplash.jpg" alt="" class="testimonial__data-img">
+                                <div class="testimonial__details">
+                                    <h3 class="testimonial__details-name">Ryan Reynolds</h3>
+                                    <span class="testimonial__details-job">Chef</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-line"></i>
+                    </div>
+                     <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-line"></i>
+                     </div>
+                </div>
+
+                <div class="testimonial__image">
+                    <div class="testimonial__square"></div>
+                    <img src="assets/images/download-removebg-preview.jpg" alt="" class="testimonial__img">
+                </div>
+            </div>
+        </section>
+
+        <section class="new section container" id="new">
+            <h2 class="section__title">New Arrivals</h2>
+            <div class="new__container swiper new-swiper">
+                <div class="swiper-wrapper new__swiper" id="new-arrival">
+                   <!--  <article class="new__card swiper-slide">
+                        <span class="new__tag">New</span>
+
+                        <img src="assets/images/new-0.png" alt="" class="new__img">
+
+                        <div class="new__data">
+                            <h3 class="new__title">Classic Glitter Clog</h3>
+                            <span class="new__price">$54.99</span>
+                        </div>
+
+                        <button class="button new__button">Add to Cart</button>
+
+                    </article>
+
+                    <article class="new__card swiper-slide">
+                        <span class="new__tag">New</span>
+
+                        <img src="assets/images/new-1.png" alt="" class="new__img">
+
+                        <div class="new__data">
+                            <h3 class="new__title">Classic Glitter Clog</h3>
+                            <span class="new__price">$54.99</span>
+                        </div>
+
+                        <button class="button new__button">Add to Cart</button>
+
+                    </article>
+
+                    <article class="new__card swiper-slide">
+                        <span class="new__tag">New</span>
+
+                        <img src="assets/images/new-2.png" alt="" class="new__img">
+
+                        <div class="new__data">
+                            <h3 class="new__title">Classic Glitter Clog</h3>
+                            <span class="new__price">$54.99</span>
+                        </div>
+
+                        <button class="button new__button">Add to Cart</button>
+
+                    </article>
+
+                    <article class="new__card swiper-slide">
+                        <span class="new__tag">New</span>
+
+                        <img src="assets/images/new-3.png" alt="" class="new__img">
+
+                        <div class="new__data">
+                            <h3 class="new__title">Classic Glitter Clog</h3>
+                            <span class="new__price">$54.99</span>
+                        </div>
+
+                        <button class="button new__button">Add to Cart</button>
+
+                    </article> -->
+                </div>
+            </div>
+        </section>
+        
+        <section class="newsletter section container">
+            <div class="newsletter__bg grid ">
+                <div class="newsletter__content">
+                    <h2 class="newsletter__title">
+                        Subsrcibe to <br> Our Newsletter
+                    </h2>
+                    <p class="newsletter__description">
+                        Crocs are always emerging in new colours and styles, so it’s a good idea to sign up to the newsletter so that you’ll hear about the latest designs when they go on sale. You’ll also get 20% off of your next order and access to other exclusive discounts too.
+                    </p>
+                </div>
+
+                <form action="" class="newsletter__subscribe">
+                    <input type="email" placeholder="Enter your email" class="newsletter__input">
+                    <button class="button">SUBSCRIBE</button>
+                </form>
+            </div>
+
+        </section>
+    </main> 
+    
+    <footer class="section footer">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">Our Information</h3>
+                <ul class="footer__address">
+                    <li>Langführstraße, 59</li>
+                    <li>66119</li>
+                    <li>Saarbrücken, Germany</li>
+                    <li>+49752318752</li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">About Us</h3>
+                <ul class="footer__list">
+                    <li>
+                        <a href="#" class="footer__link">Support Center</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Copyright</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Product</h3>
+                <ul class="footer__list">
+                    <li>
+                        <a href="#" class="footer__link">Classic Plain Clog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Classic Glitter Clog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Baseball Pack</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Accesories</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
+                <ul class="footer__social">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copyright">&#169; thisclinton. All rights reserved</span>
+    </footer>
+    
+    <!-- 
+    <div class="search-form-container container" id="search-form-container">
+
+        <div class="form-container-inner">
+            <form action="" class="form">
+                <input type="text" class="form-input" placeholder="What are you looking for?">
+                <buton class="btn form-btn" type="submit">
+                    <i class="ri-search-line search-btn"></i>
+                </buton>
+            </form>
+            <span class="form-note">Or Press ESC to close.</span>
+        </div>
+
+        <button class="btn form-close-btn place-items-center" id="form-close-btn">
+            <i class="ri-close-line"></i>
+        </button>
+    </div> -->
+    <script src="assets/js/cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    
+    
+    
+</body>
+</html>
